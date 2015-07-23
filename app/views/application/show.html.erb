@@ -10,16 +10,16 @@
     <div class = "row">
       <div class="col-xs-6 col-md-3">
         <a href = "#" class = "thumbnail">
-          <img src=<%=@imgurl%> alt="">
+          <img src=<%=@scientist.imgurl%> alt="">
         </a>
       </div>
       <div class = col-md-8>
         <div class = "page-header">
-          <h1> <%= @name %> <small> Member since <%= @membersince %> </small></h1>
-          <p><%=@description%></p>
-          <p><b>Location: </b><%=@location%></p>
+          <h1> <%= @scientist.name %> <small> Member since <%= @scientist.membersince %> </small></h1>
+          <p><%=@scientist.description%></p>
+          <p><b>Location: </b><%=@scientist.location%></p>
           <div class = "progress">
-            <div class="progress-bar" role = "progressbar" aria-valuenow="<%=@completion%>" aria-valuemin="0" aria-valuemax="100" style="width: <%=@completion%>%;">
+            <div class="progress-bar" role = "progressbar" aria-valuenow="<%=@scientist.completion%>" aria-valuemin="0" aria-valuemax="100" style="width: <%=@scientist.completion%>%;">
               <%=@completion%>%
             </div>
       </div>
