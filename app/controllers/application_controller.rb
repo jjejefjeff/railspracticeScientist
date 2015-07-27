@@ -37,4 +37,9 @@ class ApplicationController < ActionController::Base
     redirect_to "/profile/#{ s.id }"
   end
   
+  def destroy
+    s = Scientist.find_by_id(params['id'])
+    s.destroy
+  end
+  
 end
