@@ -1,0 +1,18 @@
+<h1> Edit your own scientist</h1>
+
+<form action = "/update_scientist/<%=@scientist.id%>">
+  <h3> Scientist's name </h3>
+  <input type="text" name = "name" placeholder = "name" value = "<%= @scientist.name %>">
+  <h3> Scientist's image url </h3>
+  <input type="text" name = "imgurl" placeholder = "imgurl" value =<%=@scientist.imgurl%>>
+  <h3> Scientist's join year </h3>
+  <input type="text" name = "membersince" placeholder = "membersince" value =<%=@scientist.membersince%>>
+  <h3> Scientist Description </h3>
+  <input type="text" name = "description" placeholder = "description" value= "<%=@scientist.description%>">
+  <h3> Scientist's Location </h3>
+  <input type="text" name = "location" placeholder = "location" value= "<%=@scientist.location%>">
+  <h3> Profile Completion Percent </h3>
+  <input type="text" name = "completion" placeholder = "completion" value=<%=@scientist.completion%>>
+  <p></p>
+  <input type="submit">
+</form>
