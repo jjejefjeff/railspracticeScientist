@@ -40,6 +40,11 @@ class ApplicationController < ActionController::Base
   def destroy
     s = Scientist.find_by_id(params['id'])
     s.destroy
+    redirect_to "/profile"
+  end
+  
+  def index
+    @scientists = Scientist.all
   end
   
 end
